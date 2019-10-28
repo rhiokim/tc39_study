@@ -1,3 +1,4 @@
 # TC39 Study
 
-* 2019.10.19 [Hashbang Grammar](./hashbang-grammar.md)
+* [Hashbang Grammar](./hashbang-grammar.md)
+* [Top Level Await](./async-await.md)
