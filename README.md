@@ -16,12 +16,12 @@
 | [WeakRefs](https://github.com/tc39/proposal-weakrefs) |  | []() | [Doc]() |  |
 | [Nullish coalescing Operator](https://github.com/tc39/proposal-nullish-coalescing) |  | [Rhio]() | [Doc](./nullish-coalescing-operator.md) | ✅ |
 | [throw expressions](https://github.com/tc39/proposal-throw-expressions) |  | []() | [Doc]() |  |
-| [New Set methods](https://github.com/tc39/proposal-set-methods) |  | []() | [Doc]() |  |
+| [New Set methods](https://github.com/tc39/proposal-set-methods) |  | [Rhio]() | [Doc](./new-set.md) | ✅ |
 | [iterator helpers](https://github.com/tc39/proposal-iterator-helpers) |  | []() | [Doc]() |  |
-| [String.prototype.replaceAll](https://github.com/tc39/proposal-string-replaceall) |  | []() | [Doc]() |  |
+| [String.prototype.replaceAll](https://github.com/tc39/proposal-string-replaceall) |  | [J2P]() | [Doc]() | ✅ |
 | [Temporal](https://github.com/tc39/proposal-temporal) |  | []() | [Doc]() |  |
 | [BigInt](https://github.com/tc39/proposal-bigint) |  | []() | [Doc]() |  |
-| [decorators](https://github.com/tc39/proposal-decorators) |  | [j2p]() | [Doc]() |  |
+| [decorators](https://github.com/tc39/proposal-decorators) |  | [J2P]() | [Doc]() |  |
 | [realms](https://github.com/tc39/proposal-realms) |  | []() | [Doc]() |  |
 | [Array.isTemplateObject](https://github.com/tc39/proposal-array-is-template-object) |  | []() | [Doc]() |  |
 | [Explicit Resource Management](https://github.com/tc39/proposal-explicit-resource-management) |  | []() | [Doc]() |  |
