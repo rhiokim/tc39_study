@@ -58,3 +58,8 @@
 | [Defensible class]() |  | []() | [Doc]() |  |
 | [Optional Types]() |  | []() | [Doc]() |  |
 | [Operator ::]() |  | []() | [Doc]() |  |
+
+
+## References
+
+* https://docs.google.com/presentation/d/e/2PACX-1vTeLJ5CsjVwwR5fjcOM7IhciuLPuXkvXsZ186Zk4k7pYcogKBvCy0MH5uhS3jZ7LBWGRZn-S1TyUGZb/pub?start=false&loop=false&delayms=60000&slide=id.p
