@@ -6,6 +6,8 @@
 * [Decorators](.)
 * [🔥Binary AST](./binary-ast.md)
 * [🔥Pattern Matching](./pattern-matching.md)
+* [Pipeline Operator](./pipeline-operator.md)
+* [🔥Partial Application](./partial-application.md)
 
 ## New Proposals
 
@@ -35,10 +37,10 @@
 | [Emitter](https://github.com/tc39/proposal-emitter) |  | []() | [Doc]() |  |
 | [cancellation](https://github.com/tc39/proposal-cancellation) |  | []() | [Doc]() |  |
 | [Math.seededRandoms()](https://github.com/tc39/proposal-seeded-random) |  | []() | [Doc]() |  |
-| [Pipeline Operator](https://github.com/tc39/proposal-pipeline-operator) |  | []() | [Doc]() |  |
+| [Pipeline Operator](https://github.com/tc39/proposal-pipeline-operator) |  | [Rhio]() | [Doc](./pipeline-operator.md) | ✅ |
 | [slice notation](https://github.com/tc39/proposal-slice-notation/) |  | []() | [Doc]() |  |
 | [Javascript Standard Library](https://github.com/tc39/proposal-javascript-standard-library) |  | []() | [Doc]() |  |
-| [Binary AST](https://github.com/tc39/proposal-binary-ast) |  | [Rhio]() | [Doc](./binary_binary-ast.md) | ✅ |
+| [Binary AST](https://github.com/tc39/proposal-binary-ast) |  | [Rhio]() | [Doc](./binary-ast.md) | ✅ |
 | [Asset References](https://github.com/sebmarkbage/ecmascript-asset-references) |  | []() | [Doc]() |  |
 | [Dynamic Code Brand Checks](https://github.com/tc39/proposal-dynamic-code-brand-checks) |  | []() | [Doc]() |  |
 | [Block Params](https://github.com/samuelgoto/proposal-block-params) |  | []() | [Doc]() |  |
