@@ -75,8 +75,8 @@ newScore //=> 57
 ### Use of `await`
 
 현재까지 TC39 의 최소한의 제안에는 파이프라인 내에서 `await` 를 지원하지 않기 떄문에
-`|> await function() {}` 는 에러를 만듭니다. 각각의 제안에서는 이 문제에 대한 솔루션을 제공하고 있기 때문에
-`await` 를 지원될 예정입니다.
+`|> await function() {}` 는 에러를 만듭니다. 각각의 제안에서 이 문제에 대한 솔루션을 제공하고 있어
+곧 `await` 를 지원될 예정입니다.
 
 ### Usage with `?` partial application syntax
 
@@ -96,13 +96,45 @@ let newScore = person.score
 newScore //=> 57
 ```
 
-## Practical
+## Practical & Motivation
 
-## Why?
+Iterables, AsyncIterables, Observable, Stream 프로그래밍에서는 흐르는 데이터를 컨슈밍하면서
+순회 가능하고 스트림 형태의 객체로 변환하기 위한 구문없습니다.
 
-코드의 흐름이 왼쪽에서 오른쪽으로 흐르고, 복잡한 인수 중첩에 대한 흐름 해석이 용이해져 논리적인 구조를 높이게 됩니다.
+```js
+function* numbers() {
+  yield 1
+  yield 2
+  yield 3
+}
+```
+
+그런데 파이프 오퍼레이터를 사용하면 Iterable/Stream-like 객체를 읽기 쉬운 다단계 파이프라인으로 처리할 수 있습니다.
+
+아래의 예시를 보시죠.
+
+```js
+const filter = predicate => function* (iterable) {
+  for (const value of iterable) {
+    if (predicate(value)) {
+      yield value
+    }
+  }
+}
+
+const map = project => function* (iterable) {
+  for (const value of iterable) {
+    yield project(value)
+  }
+}
+
+numbers()
+  |> filter(x => x % 2 === 1)
+  |> map(x => x + x)
+```
 
 ## References
 
 * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Pipeline_operator
 * https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-pipeline-operator
+* https://docs.google.com/presentation/d/1eFFRK1wLIazIuK0F6fY974OIDvvWXS890XAMB59PUBA/edit#slide=id.p
